@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Square from './Square';
 import Knight from './Knight';
-import { canMoveKnight, moveKnight } from './Game';
+import { moveKnight } from './Game';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
+import BoardSquare from './BoardSquare';
 
 class Board extends Component {
     renderSquare(i) {
